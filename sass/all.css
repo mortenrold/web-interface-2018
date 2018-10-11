@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+h1, li {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 100;
+  color: #3274b5; }
+
+p {
+  font-family: georgia, serif;
+  color: #3274b5; }
+
+button {
+  background: #3274b5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  cursor: pointer; }
+  button:hover {
+    background: #275a8d; }
+
+.animal-list {
+  list-style: none; }
+  .animal-list li {
+    color: #3274b5; }
+
+.box {
+  background: #3274b5;
+  height: 200px;
+  width: 634px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px; }
+
+li {
+  font-size: 12px; }
+
+@media only screen and (max-width: 700px) {
+  .box {
+    background: orange;
+    width: 100%; } }

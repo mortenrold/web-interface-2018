@@ -1,0 +1,54 @@
+// variables
+$brand-color: #3274b5;
+$my-width: 317px;
+
+// mixins
+@mixin rounded-corners ($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+h1 {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 100;
+    color: $brand-color;
+}
+p {
+    font-family: georgia, serif;
+    color: $brand-color; 
+}
+button {
+    background: $brand-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    // here I include a mixin
+    @include rounded-corners(20px);
+    cursor: pointer;
+    &:hover {
+        background: darken($brand-color, 10%);
+    }
+}
+
+.animal-list {
+    list-style: none;
+    li {
+        color: $brand-color;
+    }
+}
+.box {
+    background: $brand-color;
+    height: 200px;
+    width: $my-width * 2;
+    @include rounded-corners(50px);
+}
+li {
+    @extend h1;
+    font-size: 12px;
+}
+
+
+
+
